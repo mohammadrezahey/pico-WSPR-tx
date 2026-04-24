@@ -11,11 +11,11 @@ set(CMAKE_CXX_STANDARD 17)
 # (note this can come from environment, CMake cache etc)
 
 # Standard Pico
-# set(PICO_BOARD pico CACHE STRING "Board type")
+set(PICO_BOARD pico CACHE STRING "Board type")
 
 # Small Pico
-set(PICO_BOARD waveshare_rp2040_zero CACHE STRING "Board type")
-add_compile_definitions(PICO_DEFAULT_LED_PIN=16)
+# set(PICO_BOARD waveshare_rp2040_zero CACHE STRING "Board type")
+# add_compile_definitions(PICO_DEFAULT_LED_PIN=16)
 
 # Pull in Raspberry Pi Pico SDK (must be before project)
 include(pico_sdk_import.cmake)
